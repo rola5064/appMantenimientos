@@ -1,4 +1,7 @@
+package com.senati.appproformamantenimientos;
+
 public class ProformaItem {
+
     private String codigo;
     private String producto;
     private double precio;
@@ -11,13 +14,34 @@ public class ProformaItem {
         this.cantidad = cantidad;
     }
 
-    public String getcodigo() { return codigo; }
-    public String getProducto() { return producto; }
-    public double getPrecio() { return precio; }
-    public int getCantidad() { return cantidad; }
-    public void setProducto(String producto) { this.producto = producto; }
-    public void setPrecio(double precio) { this.precio = precio; }
-    public void setCantidad(int cantidad) { this.cantidad = cantidad; }
+    public String getcodigo() {
+        return codigo;
+    }
+
+    public String getProducto() {
+        return producto;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setProducto(String producto) {
+        this.producto = producto;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
     public double getTotal() {
         return precio * cantidad;
     }
